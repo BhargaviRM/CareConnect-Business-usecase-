@@ -599,9 +599,7 @@
 
 // export default Contact;
 
-import React, { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './navbar';
 import Footer from './footer';
@@ -633,10 +631,6 @@ const Contact = () => {
     email: '',
     message: '',
   });
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   // Handle input changes
   const handleChange = (e) => {
