@@ -53,7 +53,7 @@
 
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import {
@@ -74,6 +74,8 @@ const theme = createTheme({
 });
 
 const Navbar = () => {
+    const location = useLocation(); // Get the current route
+
     return (
         <ThemeProvider theme={theme}>
             <AppBar position="sticky" color="default" elevation={4}>
@@ -93,16 +95,48 @@ const Navbar = () => {
                         CareConnect
                     </Typography>
                     <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1, justifyContent: 'center' }}>
-                        <Button component={Link} to="/" color="inherit" sx={{ fontWeight: 'bold' }}>
+                        <Button
+                            component={Link}
+                            to="/"
+                            color="inherit"
+                            sx={{
+                                fontWeight: 'bold',
+                                color: location.pathname === '/' ? '#127d8e' : 'inherit', // Highlight "Home"
+                            }}
+                        >
                             Home
                         </Button>
-                        <Button component={Link} to="/about" color="inherit" sx={{ fontWeight: 'bold' }}>
+                        <Button
+                            component={Link}
+                            to="/about"
+                            color="inherit"
+                            sx={{
+                                fontWeight: 'bold',
+                                color: location.pathname === '/about' ? '#127d8e' : 'inherit', // Highlight "About"
+                            }}
+                        >
                             About
                         </Button>
-                        <Button component={Link} to="/services" color="inherit" sx={{ fontWeight: 'bold' }}>
+                        <Button
+                            component={Link}
+                            to="/services"
+                            color="inherit"
+                            sx={{
+                                fontWeight: 'bold',
+                                color: location.pathname === '/services' ? '#127d8e' : 'inherit', // Highlight "Services"
+                            }}
+                        >
                             Services
                         </Button>
-                        <Button component={Link} to="/contact" color="inherit" sx={{ fontWeight: 'bold' }}>
+                        <Button
+                            component={Link}
+                            to="/contact"
+                            color="inherit"
+                            sx={{
+                                fontWeight: 'bold',
+                                color: location.pathname === '/contact' ? '#127d8e' : 'inherit', // Highlight "Contact"
+                            }}
+                        >
                             Contact
                         </Button>
                     </Box>
