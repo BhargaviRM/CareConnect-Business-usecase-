@@ -202,7 +202,6 @@
 // export default Services;
 
 import React from 'react';
-import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './navbar';
 import Footer from './footer';
