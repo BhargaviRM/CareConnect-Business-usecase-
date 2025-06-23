@@ -117,7 +117,6 @@
 
 
 import React from 'react';
-import 'aos/dist/aos.css';
 import {
   Box,
   Container,
