@@ -176,7 +176,6 @@
 // export default About;
 
 
-import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './navbar';
 import Footer from './footer';
@@ -212,37 +211,31 @@ const About = () => {
       icon: <PetsIcon fontSize="large" sx={{color:"#127d8e"}}/>,
       title: 'Pet Grooming',
       desc: 'Professional grooming services to keep your pets clean, healthy, and happy.',
-      aos: 'fade-down-right'
     },
     {
       icon: <BoyIcon fontSize="large" sx={{color:"#127d8e"}}/>,
       title: 'Child Education',
       desc: "Engaging educational programs to nurture your child's growth and learning.",
-      aos: 'fade-down'
     },
     {
       icon: <FavoriteIcon fontSize="large" sx={{color:"#127d8e"}} />,
       title: 'Elderly Care',
       desc: 'Compassionate care services to ensure the comfort and well-being of elders.',
-      aos: 'fade-down-left'
     },
     {
       icon: <MedicalInformationIcon fontSize="large" sx={{color:"#127d8e"}} />,
       title: 'Health Check-ups',
       desc: 'Regular health check-ups for pets, children, and elders to ensure their well-being.',
-      aos: 'fade-up-right'
     },
     {
       icon: <RestaurantIcon fontSize="large" sx={{color:"#127d8e"}}/>,
       title: 'Nutritious Meals',
       desc: 'Healthy and balanced meals tailored for pets, children, and elders.',
-      aos: 'fade-up'
     },
     {
       icon: <DirectionsBusFilledIcon fontSize="large" sx={{color:"#127d8e"}} />,
       title: 'Safe Transportation',
       desc: 'Reliable transportation services for pets, children, and elders to appointments and activities.',
-      aos: 'fade-up-left'
     }
   ];
 
